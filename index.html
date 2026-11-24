@@ -247,9 +247,10 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         </div>
         <label><span>Kool või ettevõte <span class="opt">(valikuline)</span></span><input name="organisatsioon" type="text" autocomplete="organization"></label>
         <label>Sõnum<textarea name="sonum" rows="5" required placeholder="Mis sul aega sööb?"></textarea></label>
+        <div class="h-captcha" data-captcha="true"></div>
         <p class="err" id="vorm-viga" role="alert"></p>
         <button class="btn btn-main" type="submit">Saada</button>
-        <p class="privacy">Kasutan sinu andmeid ainult sellele kirjale vastamiseks ega jaga neid kellegagi.</p>
+        <p class="privacy">Kasutan sinu andmeid ainult sellele kirjale vastamiseks. Kiri jõuab minuni teenuse Web3Forms kaudu ja vormi kaitseb rämpsposti eest hCaptcha.</p>
         <p class="ok" id="vorm-ok" role="status" hidden>Aitäh! Kiri jõudis kohale, vastan esimesel võimalusel.</p>
       </form>
     </div>
@@ -273,6 +274,8 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
     var nimi=f.nimi.value.trim(), email=f.email.value.trim(), sonum=f.sonum.value.trim();
     if(!nimi||!email||!sonum){err.textContent='Palun täida nimi, e-post ja sõnum.';return;}
     if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='Palun kontrolli e-posti aadressi.';return;}
+    var cap=f.querySelector('textarea[name=h-captcha-response]');
+    if(cap&&!cap.value){err.textContent='Palun kinnita, et sa pole robot.';return;}
     btn.disabled=true; btn.textContent='Saadan…';
     fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
       .then(function(r){return r.json().then(function(j){return {ok:r.ok&&j.success,j:j};});})
@@ -280,9 +283,11 @@ footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
         if(res.ok){f.reset();ok.hidden=false;btn.textContent='Saadetud';}
         else{throw new Error();}
       })
-      .catch(function(){err.textContent='Saatmine ebaõnnestus. Proovi hiljem uuesti.';btn.disabled=false;btn.textContent='Saada';});
+      .catch(function(){err.textContent='Saatmine ebaõnnestus. Proovi hiljem uuesti.';btn.disabled=false;btn.textContent='Saada';})
+      .then(function(){if(window.hcaptcha){try{hcaptcha.reset();}catch(e){}}});
   });
 })();
 </script>
+<script src="https://web3forms.com/client/script.js" async defer></script>
 </body>
 </html>
