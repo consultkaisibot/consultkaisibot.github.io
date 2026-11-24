@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="et">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kaisi Consult – AI lahendused koolidele ja ettevõtetele</title>
+<meta name="description" content="Kaisi Consult OÜ aitab koolidel ja ettevõtetel tehisintellekti päriselt tööle panna – töötoad õpetajatele, automatsioonid ja AI-assistendid.">
+<link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20viewBox%3D%220%200%2064%2064%22%3E%3Crect%20x%3D%220.5%22%20y%3D%220.5%22%20width%3D%2263%22%20height%3D%2263%22%20rx%3D%2214%22%20fill%3D%22%23f7f4ee%22%20stroke%3D%22%23d6d0c4%22/%3E%3Cpath%20d%3D%22M6.00%2023.43%20C8.06%2023.43%208.51%2029.71%2010.57%2029.71%20C13.40%2029.71%2014.03%2025.71%2016.86%2025.71%20C27.49%2025.71%2023.37%2039.43%2034.00%2039.43%20C48.88%2039.43%2043.12%2024.57%2058.00%2024.57%22%20fill%3D%22none%22%20stroke%3D%22%231f6f5c%22%20stroke-width%3D%225.14%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22/%3E%3Ccircle%20cx%3D%2234.00%22%20cy%3D%2230.57%22%20r%3D%225.49%22%20fill%3D%22%23d9822b%22/%3E%3C/svg%3E">
+<link rel="canonical" href="https://kaisi.ee/">
+<link rel="preload" href="fonts/fraunces-600-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="fonts/inter-400-latin.woff2" as="font" type="font/woff2" crossorigin>
+<meta property="og:type" content="website">
+<meta property="og:locale" content="et_EE">
+<meta property="og:site_name" content="Kaisi Consult">
+<meta property="og:title" content="Kaisi Consult – AI lahendused koolidele ja ettevõtetele">
+<meta property="og:description" content="Kaisi Consult OÜ aitab koolidel ja ettevõtetel tehisintellekti päriselt tööle panna – töötoad õpetajatele, automatsioonid ja AI-assistendid.">
+<meta property="og:url" content="https://kaisi.ee/">
+<meta property="og:image" content="https://kaisi.ee/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Kaisi Consult logo: AI lahendused koolidele ja ettevõtetele">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#1f6f5c">
+<link rel="apple-touch-icon" href="logo/apple-touch-icon.png">
+<style id="fonts">
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/fraunces-600-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Fraunces';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/fraunces-600-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/inter-400-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Inter';font-style:normal;font-weight:400;font-display:swap;src:url(fonts/inter-400-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/inter-600-latin-ext.woff2) format('woff2');unicode-range:U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF}
+@font-face{font-family:'Inter';font-style:normal;font-weight:600;font-display:swap;src:url(fonts/inter-600-latin.woff2) format('woff2');unicode-range:U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD}
+</style>
+<style>
+:root{
+  --bg:#f7f4ee; --surface:#ffffff; --ink:#1d2321; --muted:#5b6461;
+  --accent:#1f6f5c; --accent-ink:#ffffff; --accent-soft:#e3efe9;
+  --warm:#d9822b; --line:#e4dfd5;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141917; --surface:#1d2421; --ink:#eef1ef; --muted:#a3ada9;
+    --accent:#5cc2a3; --accent-ink:#0f1513; --accent-soft:#1f302a;
+    --warm:#f0a65a; --line:#2c3531;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141917; --surface:#1d2421; --ink:#eef1ef; --muted:#a3ada9;
+  --accent:#5cc2a3; --accent-ink:#0f1513; --accent-soft:#1f302a;
+  --warm:#f0a65a; --line:#2c3531;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:'Inter',system-ui,-apple-system,'Segoe UI',sans-serif;font-synthesis:none;line-height:1.6;font-size:17px}
+a{color:var(--accent)}
+.wrap{max-width:1040px;margin:0 auto;padding:0 16px}
+h1,h2,h3{font-family:'Fraunces',Georgia,serif;line-height:1.15;font-weight:600;overflow-wrap:break-word;hyphens:manual;text-wrap:balance}
+h2{font-size:clamp(1.7rem,4vw,2.3rem);margin-bottom:.6rem}
+h3{font-size:1.25rem;margin-bottom:.4rem}
+.lead{color:var(--muted);max-width:620px;font-size:1.08rem}
+
+/* nav */
+header{position:sticky;top:0;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:10}
+nav{display:flex;align-items:center;justify-content:space-between;height:60px}
+.logo{display:flex;align-items:center;text-decoration:none}
+.logo-svg{height:34px;width:auto;display:block}
+.navlinks{display:flex;gap:22px;list-style:none}
+.navlinks a{color:var(--ink);text-decoration:none;font-weight:600;font-size:.95rem}
+.navlinks a:hover{color:var(--accent)}
+@media (max-width:640px){.navlinks li:not(:last-child){display:none}}
+
+/* hero */
+.hero{padding:80px 0 64px}
+.eyebrow{display:inline-block;background:var(--accent-soft);color:var(--accent);font-weight:600;font-size:.85rem;padding:5px 12px;border-radius:99px;margin-bottom:20px}
+.hero h1{font-size:clamp(2.2rem,6vw,3.6rem);max-width:780px;margin-bottom:20px}
+.hero h1 em{font-style:normal;color:var(--accent)}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.btn{display:inline-block;padding:13px 22px;border-radius:10px;font-weight:600;text-decoration:none}
+.btn-main{background:var(--accent);color:var(--accent-ink)}
+.btn-ghost{border:1.5px solid var(--line);color:var(--ink)}
+.btn:hover{opacity:.9}
+
+section{padding:64px 0}
+.alt{background:var(--surface);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+
+/* cards */
+.grid2{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:32px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:28px}
+.alt .card{background:var(--bg)}
+.tag{font-size:.8rem;font-weight:600;text-transform:uppercase;letter-spacing:.06em;color:var(--warm);margin-bottom:8px}
+.card ul{list-style:none;margin-top:14px}
+.card li{padding:7px 0 7px 26px;position:relative;border-top:1px solid var(--line)}
+.card li:first-child{border-top:none}
+.card li::before{content:"";position:absolute;left:4px;top:calc(7px + .8em - 4px);width:7px;height:7px;border-top:2px solid var(--accent);border-right:2px solid var(--accent);transform:rotate(45deg)}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px;margin-top:32px;counter-reset:s}
+.step{counter-increment:s;padding-top:14px;border-top:3px solid var(--accent)}
+.step::before{content:counter(s,decimal-leading-zero);font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.6rem;color:var(--accent);display:block;margin-bottom:6px}
+.step p{color:var(--muted)}
+
+/* about */
+.about{display:grid;grid-template-columns:1fr 1.4fr;gap:40px;align-items:start}
+@media (max-width:760px){.about{grid-template-columns:1fr}}
+.facts{display:grid;gap:12px}
+.fact{background:var(--accent-soft);border-radius:12px;padding:16px 18px}
+.fact b{display:block;font-family:'Fraunces',Georgia,serif;font-weight:600;font-size:1.1rem;color:var(--accent)}
+.fact span{color:var(--muted);font-size:.95rem}
+.about p+p{margin-top:14px}
+
+/* examples */
+.ex .card p{color:var(--muted)}
+
+/* contact */
+.contact{text-align:center}
+.contact .lead{margin:0 auto}
+.contact .btns{justify-content:center}
+.form{max-width:560px;margin:28px auto 0;text-align:left;display:grid;gap:14px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media (max-width:560px){.row2{grid-template-columns:1fr}}
+.form label{display:grid;gap:6px;font-weight:600;font-size:.95rem}
+.form .opt{font-weight:400;color:var(--muted)}
+.form input,.form textarea{font:inherit;color:var(--ink);background:var(--bg);border:1.5px solid var(--line);border-radius:10px;padding:11px 13px;width:100%}
+.form input:focus,.form textarea:focus{outline:none;border-color:var(--accent)}
+.form textarea{resize:vertical}
+.form button{border:none;cursor:pointer;justify-self:start;font:inherit;font-weight:600}
+.form button:disabled{opacity:.6;cursor:wait}
+.hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.privacy{font-size:.85rem;color:var(--muted)}
+.err{color:#b4412b;font-size:.9rem;min-height:0}
+.err:empty{display:none}
+.ok{background:var(--accent-soft);color:var(--accent);border-radius:10px;padding:12px 14px;font-weight:600}
+footer{padding:28px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:8px}
+</style>
+</head>
+<body>
+
+<header>
+  <nav class="wrap">
+    <a class="logo" href="#"><svg class="logo-svg" aria-label="Kaisi Consult" xmlns="http://www.w3.org/2000/svg" viewBox="-80 0 4758 1654" role="img"><g transform="translate(0 1549) scale(1 -1)"><path fill="var(--ink)" transform="translate(0 0)" d="M130 0Q101 0 90.0 11.0Q79 22 79 41Q79 56 87.5 66.5Q96 77 116 84L155 94Q173 101 181.5 115.0Q190 129 190 160V1255Q190 1280 182.5 1291.0Q175 1302 158 1305L105 1309Q87 1314 79.0 1323.0Q71 1332 71 1346Q71 1362 80.5 1372.0Q90 1382 117 1392L303 1460Q341 1474 364.0 1480.5Q387 1487 408 1487Q439 1487 455.0 1469.5Q471 1452 471 1423V502L797 768Q832 796 828.5 820.5Q825 845 786 857L751 866Q732 872 725.0 881.0Q718 890 718 905Q718 925 732.0 936.0Q746 947 771 947H1121Q1145 947 1159.5 936.0Q1174 925 1174 907Q1174 888 1162.0 876.0Q1150 864 1112 855Q1061 844 1021.5 822.0Q982 800 922 752L766 627L1090 159Q1114 126 1132.0 112.5Q1150 99 1183 88Q1204 78 1214.5 66.0Q1225 54 1225 39Q1225 21 1210.5 10.5Q1196 0 1172 0H764Q742 0 729.0 11.0Q716 22 716 41Q716 54 723.0 63.0Q730 72 746 78L778 87Q806 95 808.0 111.5Q810 128 782 167L571 472L471 391V160Q471 129 480.0 115.0Q489 101 507 94L543 84Q575 71 575 44Q575 0 519 0Z"/><path fill="var(--accent)" transform="translate(1232 0)" d="M86 209Q86 334 197.5 411.0Q309 488 509 488Q574 488 627 477Q647 473 666 467V749Q666 819 630.5 857.5Q595 896 530 896Q471 896 439.0 871.0Q407 846 407 809V721Q407 661 367.0 628.5Q327 596 254 596Q192 596 160.0 625.5Q128 655 128 706Q128 769 180.0 829.5Q232 890 333.0 929.5Q434 969 582 969Q766 969 855.5 894.5Q945 820 945 693V173Q945 145 956.5 131.0Q968 117 989 117Q1011 117 1022.0 127.5Q1033 138 1041 149Q1046 156 1052.0 160.5Q1058 165 1067 165Q1079 165 1085.0 156.0Q1091 147 1091 132Q1091 98 1067.5 62.0Q1044 26 997.5 0.5Q951 -25 881 -25Q792 -25 739 16Q698 46 688 95Q642 47 577 18Q484 -25 380 -25Q249 -25 167.5 40.0Q86 105 86 209ZM666 395Q646 403 626 408Q590 417 549 417Q466 417 419.5 374.5Q373 332 373.0 257.0Q373 182 412.5 142.0Q452 102 515 102Q569 102 619 127Q644 139 666 157Z"/><path fill="var(--accent)" transform="translate(2353 0)" d="M468 916V160Q468 130 477.5 115.5Q487 101 504 94L541 84Q558 78 567.5 67.5Q577 57 577 41Q577 22 563.0 11.0Q549 0 524 0H133Q109 0 95.0 11.0Q81 22 81 41Q81 56 90.0 66.5Q99 77 116 84L155 94Q172 102 181.0 115.5Q190 129 190 160V737Q190 763 182.0 773.5Q174 784 158 788L105 791Q88 796 79.5 804.5Q71 813 71 827Q71 843 82.0 853.5Q93 864 117 873L328 944Q361 955 380.5 959.5Q400 964 420 964Q442 964 455.0 951.0Q468 938 468 916Z"/><path fill="var(--ink)" transform="translate(2988 0)" d="M509 66Q578 66 615.5 100.5Q653 135 653 187Q653 220 638.5 247.0Q624 274 582.5 296.0Q541 318 462 337Q308 368 223.5 416.0Q139 464 106.5 527.5Q74 591 74 667Q74 806 172.5 888.0Q271 970 457 970Q524 970 566.5 959.0Q609 948 636.0 936.5Q663 925 684 925Q706 925 717.5 936.5Q729 948 740.5 959.0Q752 970 773 970Q788 970 800.0 960.5Q812 951 820 924L886 723Q898 688 893.5 666.0Q889 644 866 635Q843 626 826.5 634.5Q810 643 794 666Q750 745 698.5 791.5Q647 838 590.5 858.5Q534 879 473 879Q388 879 345.0 844.5Q302 810 302 751Q302 716 320.0 688.0Q338 660 387.5 636.5Q437 613 529 591Q660 563 736.0 518.5Q812 474 845.5 411.5Q879 349 879 265Q879 179 834.5 113.5Q790 48 710.5 11.5Q631 -25 527 -25Q461 -25 421.5 -12.0Q382 1 356.5 13.5Q331 26 307 26Q285 26 270.5 13.5Q256 1 243.0 -12.0Q230 -25 211 -25Q196 -25 185.5 -14.0Q175 -3 170 23L131 214Q124 254 128.5 273.5Q133 293 154 301Q176 310 193.0 299.5Q210 289 227 261Q289 156 361.5 111.0Q434 66 509 66Z"/><path fill="var(--ink)" transform="translate(3964 0)" d="M472 902V160Q472 129 480.5 114.5Q489 100 507 94L545 84Q564 78 573.0 67.5Q582 57 582 41Q582 22 569.0 11.0Q556 0 527 0H133Q105 0 92.0 11.0Q79 22 79 41Q79 56 88.0 66.5Q97 77 116 84L155 94Q173 101 181.5 115.0Q190 129 190 160V733Q190 759 182.5 770.0Q175 781 158 784L105 788Q87 792 79.0 801.0Q71 810 71 824Q71 841 80.5 851.0Q90 861 117 871L303 939Q342 953 365.5 959.0Q389 965 405 965Q439 965 455.5 947.5Q472 930 472 902ZM309 1118Q229 1118 180.5 1159.5Q132 1201 132 1268Q132 1335 180.5 1375.5Q229 1416 309 1416Q390 1416 438.5 1375.5Q487 1335 487 1268Q487 1201 438.5 1159.5Q390 1118 309 1118Z"/><path d="M2187.00 1444.00 C2223.00 1444.00 2231.00 1334.00 2267.00 1334.00 C2316.50 1334.00 2327.50 1404.00 2377.00 1404.00 C2563.00 1404.00 2491.00 1164.00 2677.00 1164.00 C2937.40 1164.00 2836.60 1424.00 3097.00 1424.00" fill="none" stroke="var(--accent)" stroke-width="90" stroke-linecap="round" stroke-linejoin="round"/><circle cx="2677" cy="1319" r="96" fill="var(--warm)"/></g></svg></a>
+    <ul class="navlinks">
+      <li><a href="#teenused">Mida teen</a></li>
+      <li><a href="#kuidas">Kuidas</a></li>
+      <li><a href="#pohimotted">Põhimõtted</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="wrap">
+      <span class="eyebrow">AI koolidele ja ettevõtetele</span>
+      <h1>Tehisintellekt, mis <em>päriselt</em> tööd kergemaks teeb.</h1>
+      <p class="lead">Aitan õpetajatel ja ettevõtetel leida need kohad, kus AI säästab aega – ja panen selle tööle. Ilma moesõnade ja suurte lubadusteta, väikeste sammudega, mida on näha ja mõõta.</p>
+      <div class="btns">
+        <a class="btn btn-main" href="#kontakt">Räägime</a>
+        <a class="btn btn-ghost" href="#teenused">Mida ma teen</a>
+      </div>
+    </div>
+  </div>
+
+  <section id="teenused" class="alt">
+    <div class="wrap">
+      <h2>Mida teen</h2>
+      <p class="lead">Kaks maailma, mida tunnen seestpoolt: kool ja ettevõtte igapäevased protsessid.</p>
+      <div class="grid2">
+        <div class="card">
+          <div class="tag">Koolidele</div>
+          <h3>Õpetaja aeg tagasi õpetamisele</h3>
+          <p>Õpetaja aeg kulub suuresti ettevalmistusele ja paberitööle. Näitan, kuidas AI selles aitab – ja kuidas sellest õpilastega ausalt rääkida.</p>
+          <ul>
+            <li>Praktilised töötoad õpetajatele</li>
+            <li>Kooli enda vajadustele tehtud väikesed tööriistad</li>
+            <li>AI kasutamise kokkulepped ja juhendid koolile</li>
+          </ul>
+        </div>
+        <div class="card">
+          <div class="tag">Ettevõtetele</div>
+          <h3>Vähem käsitööd, rohkem tulemust</h3>
+          <p>Ärisüsteemide juurutamise kogemusest tean, kus inimesed kopeerivad, kleebivad ja otsivad. Just seal on AI-l kõige kiirem kasu.</p>
+          <ul>
+            <li>Tööprotsesside automatiseerimine (nt n8n)</li>
+            <li>AI-assistendid, mis vastavad sinu enda andmete põhjal</li>
+            <li>Koosolekute, dokumentide ja e-kirjade töötlus</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kuidas">
+    <div class="wrap">
+      <h2>Kuidas see käib</h2>
+      <p class="lead">Alustan alati ühest konkreetsest murest, mitte suurest projektist. Praegu teen esimesi pilootprojekte tasuta – vastu küsin ausat tagasisidet.</p>
+      <div class="steps">
+        <div class="step"><h3>Vestlus</h3><p>Räägime, mis sul aega sööb. Pool tundi, ilma kohustuseta.</p></div>
+        <div class="step"><h3>Üks lahendus</h3><p>Valime ühe asja ja teen selle valmis – töötuba, tööriist või automatsioon.</p></div>
+        <div class="step"><h3>Proovime</h3><p>Sa kasutad seda päriselt. Vaatame koos, mis töötab ja mis mitte.</p></div>
+        <div class="step"><h3>Edasi</h3><p>Kui kasu on näha, mõtleme järgmise sammu. Kui pole, oleme mõlemad midagi õppinud.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="pohimotted" class="alt">
+    <div class="wrap about">
+      <div>
+        <h2>Põhimõtted</h2>
+        <div class="facts">
+          <div class="fact"><b>Kool ja äri</b><span>kogemus mõlemas maailmas, mitte ainult tehnoloogias</span></div>
+          <div class="fact"><b>Teaduslik mõtteviis</b><span>katsetame, mõõdame ja alles siis otsustame</span></div>
+          <div class="fact"><b>Ausus</b><span>kui AI sinu murele ei sobi, ütlen seda otse</span></div>
+        </div>
+      </div>
+      <div>
+        <p>Nii koolis kui ettevõtetes on näha sama asja: inimesed kulutavad liiga palju aega tööle, mille masin teeks paremini ära.</p>
+        <p>Tehisaru oskab palju, aga kasu tuleb siis, kui see on pandud lahendama päris muret. Seepärast algab iga töö küsimusest „mis sul aega sööb?”, mitte küsimusest „mis tööriista me kasutame?”.</p>
+        <p>Kaisi Consulti mõte on lihtne: aidata koolidel ja ettevõtetel AI-d kasutada targalt, turvaliselt ja kasulikult.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="ex">
+    <div class="wrap">
+      <h2>Mida AI saab teha – näiteid</h2>
+      <div class="grid2">
+        <div class="card"><div class="tag">Kool</div><h3>Õpetaja abiline</h3><p>Tööriist, mis võtab üle korduva paberitöö – näiteks tunniplaanide, ülesannete või tagasiside ettevalmistuse.</p></div>
+        <div class="card"><div class="tag">Ettevõte</div><h3>Koosolekute kokkuvõtted</h3><p>Automatsioon, mis teeb koosoleku salvestusest kokkuvõtte ja tegevuspunktid, nii et keegi ei pea protokolli kirjutama.</p></div>
+        <div class="card"><div class="tag">Ettevõte</div><h3>Veebilehe AI-assistent</h3><p>Assistent, mis vastab klientide küsimustele ainult ettevõtte enda veebilehe sisu põhjal – ei mõtle midagi juurde.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="alt contact">
+    <div class="wrap">
+      <h2>Räägime</h2>
+      <p class="lead">Kas sul on mõni tüütu korduv töö või kool, kus AI teema vajab korda? Kirjuta – vastan ise.</p>
+      <form id="kontaktvorm" class="form" action="https://api.web3forms.com/submit" method="POST" novalidate>
+        <!-- Web3Forms võti: genereeri web3forms.com lehel oma e-posti aadressiga ja pane siia -->
+        <input type="hidden" name="access_key" value="SINU_WEB3FORMS_VOTI">
+        <input type="hidden" name="subject" value="Uus kiri kaisi.ee kontaktvormist">
+        <input type="hidden" name="from_name" value="kaisi.ee">
+        <input type="checkbox" name="botcheck" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+        <div class="row2">
+          <label>Nimi<input name="nimi" type="text" autocomplete="name" required></label>
+          <label>E-post<input name="email" type="email" autocomplete="email" required></label>
+        </div>
+        <label><span>Kool või ettevõte <span class="opt">(valikuline)</span></span><input name="organisatsioon" type="text" autocomplete="organization"></label>
+        <label>Sõnum<textarea name="sonum" rows="5" required placeholder="Mis sul aega sööb?"></textarea></label>
+        <p class="err" id="vorm-viga" role="alert"></p>
+        <button class="btn btn-main" type="submit">Saada</button>
+        <p class="privacy">Kasutan sinu andmeid ainult sellele kirjale vastamiseks ega jaga neid kellegagi.</p>
+        <p class="ok" id="vorm-ok" role="status" hidden>Aitäh! Kiri jõudis kohale, vastan esimesel võimalusel.</p>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>© 2026 Kaisi Consult OÜ</span>
+    <span>kaisi.ee</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  var f=document.getElementById('kontaktvorm'); if(!f) return;
+  var err=document.getElementById('vorm-viga'), ok=document.getElementById('vorm-ok'), btn=f.querySelector('button');
+  f.addEventListener('input',function(){err.textContent='';});
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var nimi=f.nimi.value.trim(), email=f.email.value.trim(), sonum=f.sonum.value.trim();
+    if(!nimi||!email||!sonum){err.textContent='Palun täida nimi, e-post ja sõnum.';return;}
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){err.textContent='Palun kontrolli e-posti aadressi.';return;}
+    btn.disabled=true; btn.textContent='Saadan…';
+    fetch(f.action,{method:'POST',headers:{'Accept':'application/json'},body:new FormData(f)})
+      .then(function(r){return r.json().then(function(j){return {ok:r.ok&&j.success,j:j};});})
+      .then(function(res){
+        if(res.ok){f.reset();ok.hidden=false;btn.textContent='Saadetud';}
+        else{throw new Error();}
+      })
+      .catch(function(){err.textContent='Saatmine ebaõnnestus. Proovi hiljem uuesti.';btn.disabled=false;btn.textContent='Saada';});
+  });
+})();
+</script>
+</body>
+</html>
